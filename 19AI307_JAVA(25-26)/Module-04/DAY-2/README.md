@@ -32,7 +32,7 @@ To implement the Observer Pattern where a Channel (Subject) notifies all its Sub
  ```
 /*
 Program to implement a SOLID Principles in Java Program
-Developed by: Naveen Kumar V 
+Developed by: Naveen Kumar V
 RegisterNumber:  212223220068
 */
 ```
@@ -89,3 +89,33 @@ public class prog {
         Channel channel = new Channel(channelName);
 
         int n = sc.nextInt(); 
+        sc.nextLine();
+        for (int i = 0; i < n; i++) {
+            String sub = sc.nextLine();
+            channel.subscribe(new Subscriber(sub));
+        }
+
+        int v = sc.nextInt(); 
+        sc.nextLine();
+        for (int i = 0; i < v; i++) {
+            String title = sc.nextLine();
+            channel.uploadVideo(title);
+        }
+    }
+}
+```
+
+
+
+
+
+
+## OUTPUT:
+
+<img width="1211" height="407" alt="image" src="https://github.com/user-attachments/assets/f8337d06-e894-4127-8e95-bc314e4243f3" />
+
+
+## RESULT:
+
+Thus, the program is executed successfully.
+
